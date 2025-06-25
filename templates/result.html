@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result | Hemetovision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #2c3e50;
+      font-size: 32px;
+    }
+
+    .prediction {
+      font-size: 24px;
+      color: #e74c3c;
+      margin: 20px 0;
+    }
+
+    img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 30px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Prediction Result</h2>
+      <div class="prediction">Predicted Blood Cell Type: <strong>{{ prediction }}</strong></div>
+      <img src="{{ image_url }}" alt="Uploaded Blood Cell Image">
+      <br>
+      <a href="/" class="btn">Try Another Image</a>
+    </div>
+  </div>
+</body>
+</html>
