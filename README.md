@@ -11,7 +11,7 @@ Hemetovision is an AI-powered web application for blood cell analysis using deep
 - Flask
 
 ## Model Details
-- Algorithm: CNN / MobileNetV2
+- Algorithm: Transfer Learning(CNN) / MobileNetV2
 - Dataset:   [Medical Images](https://www.kaggle.com/datasets/paultimothymooney/blood-cells)
 
 ## ▶ How to Run
